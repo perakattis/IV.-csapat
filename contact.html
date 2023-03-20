@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>VTech - Kapcsolat</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body class="bg-light">
+
+<!-- Navbar -->
+<div class="sticky-top">
+  <nav class="navbar navbar-expand-sm navbar-light bg-white shadow">
+    <a class="navbar-brand" href="index.html">VTech</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Főoldal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Rólunk</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contact.html">Kapcsolat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="items.html">Termékek</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="allas.html">Álláshírdetések</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<!-- Content Container -->
+<div class="container pt-5" style="position: relative;">
+
+  <!-- Alerts -->
+  <div style="position: absolute; z-index: 69;">
+    <div style="position: relative;">
+      <div id="hibatoast" role="alert" aria-live="assertive" aria-atomic="true" class="toast border border-danger mr-auto" data-autohide="true" data-delay="5000">
+        <div class="toast-header">
+          <strong class="mr-auto">Hiba!</strong>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body">
+          Hiba történt az üzenet elküldése során. Kérjük próbálja újra később!
+        </div>
+      </div>
+      <div id="jotoast" role="alert" aria-live="assertive" aria-atomic="true" class="toast border border-success mr-auto" data-autohide="true" data-delay="5000">
+        <div class="toast-header">
+          <strong class="mr-auto">Siker!</strong>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body">
+          Valami jól sikerült...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="row">
+    <div class="col-lg mt-1 mb-1">
+      <div class="rounded shadow cs_map">
+          <iframe title="Térkép" height="100%" width="100%"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2698.250756542375!2d19.152627934008976!3d47.44605124044427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c2f6c21c302d%3A0xd53cf5b1747222d8!2sBGSZC%20Pestszentl%C5%91rinci%20Technikum!5e0!3m2!1shu!2shu!4v1675535188171!5m2!1shu!2shu"
+                  style="border:0" loading="lazy" allowfullscreen=""></iframe>
+      </div>
+    </div>
+    <div class="col-lg mt-1 mb-1">
+      <div class="card border-primary shadow-sm cs_info">
+        <div class="card-body">
+          <h5 class="card-title">Elérhetőségeink:</h5>
+          <p class="card-text">Helyszín: Budapest, Hengersor u. 34, 1184</p>
+          <p class="card-text">Email: sanca.sandu2013@citromail.ro</p>
+          <p class="card-text">Telefon: 0771264201</p>
+          <p class="card-text">Nyitvatartás: H-P 8:30-17:00</p>
+          <a href="#contact_name" class="btn btn-primary">Írjon nekünk üzenetet!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row pt-3">
+    <div class="col-lg">
+      <!-- Contact Form -->
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <form id="contact_form">
+            <div class="form-group row">
+              <label for="contact_name" class="col-sm-2 col-form-label">Név</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="contact_name" placeholder="Teljes név" required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="contact_email" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="contact_email" placeholder="Email" required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="contact_text" class="col-sm-2 col-form-label">Üzenet</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" id="contact_text" rows="5" placeholder="Üzenet" required></textarea>
+              </div>
+            </div>
+            <fieldset class="form-group">
+              <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Üzenet Tárgya</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadio1" value="0"
+                           checked>
+                    <label class="form-check-label" for="gridRadio1">
+                      Kapcsolatfelvétel
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadio2" value="1">
+                    <label class="form-check-label" for="gridRadio2">
+                      Árajánlat kérése
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadio3" value="2">
+                    <label class="form-check-label" for="gridRadio3">
+                      Probléma jelentése
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <div class="form-group row">
+              <div class="col-sm-2">Válasz</div>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="contact_response">
+                  <label class="form-check-label" for="contact_response">
+                    Visszaigazóló email kérése
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <button type="submit" id="submit_b" class="btn btn-primary">Küldés</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start text-dark">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2023 Copyright: VTech <br><br>
+    <p style="font-size: 10px;">Áraink forintban értendők és az ÁFA-t tartalmazzák. A feltüntetett árak, képek leírások tájékoztató jellegűek, és nem minősülnek ajánlattételnek, az esetleges pontatlanságért nem vállalunk felelősséget.
+    </p> 
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<!-- Optional JavaScript -->
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

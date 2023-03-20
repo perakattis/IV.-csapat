@@ -1,0 +1,21 @@
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+footer{
+  margin-top: auto;
+  padding-top: 5vh;
+}
+
+.darken{
+  filter: brightness(50%);
+}
+
+.toast .show {
+  .z-index: 100;
+}
+
+.toast .hide {
+  z-index: -1;
+}
