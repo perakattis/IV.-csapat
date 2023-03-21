@@ -83,3 +83,4 @@ $("#search_form").submit((e) => {
     }
   });
 });
+

@@ -162,62 +162,44 @@
 <br>
 <br>
 <br>
-<p style="font-size: 80px;color:#48494B; text-align: center; ">A hónap legkelendőbb termékei: </p>
+<p style="font-size: 80px;color:#48494B; text-align: center; ">A hónap legkelendőbb termékei</p>
 <br>
 <br>
 <br>
 <br>
 <br>
 <br>
-<div class="container-fluid">
-  <div class="row">
-
-    <div class="col-lg-2">
-
+<div class="container">
+  <div class="row text-center">
+    <div class="col-lg-6">
+      <div class="card" style="width: 28rem;">
+        <img class="card-img-top" src="img/MSleg.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #48494B;">MASTER-SPORT Légszűrő</h5>
+            <p class="card-text" style="color: #48494B;">Audi szűrőbetét 2,0 benzin</p>
+            <h3 class="card-text" style="color: #48494B;">3 507 Ft</h3> <br>
+            <a href="items.html" class="btn btn-primary">Érdekel!</a>
+          </div>
+      </div>
     </div>
-    <div class="col-lg-3">
-      <img src="img/MSleg.jpg" alt="" style="width: 100%;">
-    </div>
-    <div class="col-lg-2">
-
-    </div>
-    <div class="col-lg-3">
-      <img src="img/ridfek1.jpg" alt="" style="width: 100%;">
-    </div>
-    <div class="col-lg-2">
-
-    </div>
-  </div>
-
-<br>
-<br>
-
-  <div class="row">
-
-    <div class="col-lg-2">
-
-    </div>
-    <div class="col-lg-3">
-      <p class="text-center" style="font-size: 50px;color:#48494B; ">MASTER-SPORT Légszűrő </p>
-      <p class="text-center" style="font-size: 30px;color:#48494B; ">Audi szűrőbetét 2,0 benzin </p>
-      <p class="text-center" style="font-size: 40px;color:#48494B; ">3 507 Ft</p>
-      <p class="text-center"><a class="button button5" href="items.html" target="_blank">Érdekel!</a></p>
-    </div>
-    <div class="col-lg-2">
-
-    </div>
-    <div class="col-lg-3">
-      <p class="text-center" style="font-size: 50px;color:#48494B; ">RIDEX fékbetét</p>
-      <p class="text-center" style="font-size: 30px;color:#48494B; ">Elsőtengelyre fékbetét készlet, tárcsafék BMW-hez</p>
-      <p class="text-center" style="font-size: 40px;color:#48494B; ">10 760 Ft</p>
-      <p class="text-center"><a class="button button5" href="items.html" target="_blank">Érdekel!</a></p>
-    </div>
-    <div class="col-lg-2">
-
+    <div class="col-lg-6">
+      <div class="card" style="width: 28rem;">
+        <img class="card-img-top" src="img/ridfek1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #48494B;">RIDEX fékbetét</h5>
+            <p class="card-text" style="color: #48494B;">Elsőtengelyre fékbetét készlet, tárcsafék BMW-hez</p>
+            <h3 class="card-text"style="color: #48494B;"> 10 760 Ft</h3> <br>
+            <a href="items.html" class="btn btn-primary">Érdekel!</a>
+          </div>
+      </div>
     </div>
   </div>
 </div>
 
+<br>
+<br>
+<br>
+<br>
 
 <!-- Footer -->
 <footer class="text-lg-start text-dark">
@@ -237,6 +219,15 @@
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+</script>
+<script>
+  $(document).ready(function() {
+  $(".card").css("height", $(".card").height());
+  $(window).resize(function() {
+    $(".card").css("height", $(".card").height());
+  });
+});
+</script>
 </body>
 </html>
